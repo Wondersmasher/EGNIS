@@ -1,19 +1,24 @@
 "use client";
 import Image from "next/image";
-import { egnisLogoIcon } from "../../public/svgs";
+import {
+  arrowRightGreen,
+  arrowRightWhite,
+  egnisLogoIcon2,
+} from "../../public/svgs";
+import { eHealth, transforming, whyEgnis } from "../../public/images";
 
 export default function Home() {
   return (
-    <div className='min-h-screen font-[family-name:var(--font-inter)] bg-accent-white text-black'>
-      <div className='flex border-[3px] border-main px-[14.44vw] gap-6 py-3 justify-between'>
+    <div className='min-h-screen font-[family-name:var(--font-inter)]'>
+      <div className='flex border-[3px] border-main bg-white px-[10vw] gap-6 py-3 justify-between'>
         <Image
-          src={egnisLogoIcon}
+          src={egnisLogoIcon2}
           alt='Logo'
-          width={20}
-          height={20}
-          className='size-4'
+          width={200}
+          height={50}
+          className=''
         />
-        <div className='flex gap-8 items-center justify-center'>
+        <div className='flex gap-[1.5vw] items-center justify-center'>
           {navTitles.map((title) => {
             return (
               <p
@@ -29,11 +34,12 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className='flex flex-col gap-24 bg-linear-to-tr from-white to-accent-light px-[14.44vw] pt-8 pb-32 justify-center items-center'>
+      <div className='flex flex-col gap-24 bg-linear-to-tr from-white to-accent-light px-[10vw] pt-8 pb-32 justify-center items-center'>
         <p className='italic text-main text-xl font-medium w-fit'>
           ABOUT EGNIS
         </p>
         <div className='flex gap-20'>
+          <Image src={transforming} alt='Logo' className='' />
           <div className='flex flex-col gap-8 w-1/2'>
             <p className='font-bold text-[56px] text-text-gray900 leading-16'>
               Transforming Governance Through Digital Infrastructure
@@ -53,7 +59,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col gap-16  bg-linear-to-r from-white to-accent-light px-[14.44vw] pt-8 pb-32  justify-center items-center'>
+      <div className='flex flex-col gap-16  bg-linear-to-r from-white to-accent-light px-[10vw] pt-8 pb-32  justify-center items-center'>
         <p className='italic text-main text-xl font-medium w-fit'>
           EGNis Features{" "}
         </p>
@@ -73,21 +79,26 @@ export default function Home() {
                 className='bg-white p-6 rounded-2xl flex flex-col justify-between gap-5 hover:shadow-lg duration-500 cursor-pointer w-[15.67vw]'
               >
                 <div className='flex flex-col gap-5'>
-                  <div className='bg-black size-16 rounded-lg'></div>
+                  <div className='bg-icon-bg size-16 rounded-lg'></div>
                   <p className='text-text-gray900 text-base font-medium'>
                     {feat}
                   </p>
                 </div>
-                <p className='text-main font-medium text-sm'>Learn more</p>
+                <button className='text-main font-medium text-sm flex gap-2 items-center'>
+                  Learn more
+                  <Image src={arrowRightGreen} alt='Logo' className='' />
+                </button>{" "}
               </div>
             );
           })}
         </div>
-        <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer'>
+
+        <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer flex gap-3 items-center'>
           Learn More About EGNiS Core
+          <Image src={arrowRightWhite} alt='Logo' className='' />
         </button>
       </div>
-      <div className='flex flex-col gap-16  bg-linear-to-r from-accent-light to-white px-[14.44vw] py-8  justify-center items-center'>
+      <div className='flex flex-col gap-16  bg-linear-to-r from-accent-light to-white px-[10vw] py-8  justify-center items-center'>
         <div className='flex flex-col gap-3 text-text-gray900 items-center'>
           <p className='text-[56px] font-semibold '>
             Integrated Products and Solutions
@@ -105,21 +116,25 @@ export default function Home() {
                 className='bg-white p-6 rounded-2xl flex flex-col justify-between items-center gap-5 shadow-lg cursor-pointer w-[21.67vw]'
               >
                 <div className='flex flex-col gap-5 items-center'>
-                  <div className='bg-black size-16 rounded-lg'></div>
+                  <div className='bg-icon-bg size-16 rounded-lg'></div>
                   <p className='text-text-gray900 text-base font-medium text-center'>
                     {sol}
                   </p>
                 </div>
-                <p className='text-main font-medium text-sm'>Learn more</p>
+                <button className='text-main font-medium text-sm flex gap-2 items-center'>
+                  Learn more
+                  <Image src={arrowRightGreen} alt='Logo' className='' />
+                </button>
               </div>
             );
           })}
         </div>
-        <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer'>
+        <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer flex gap-3 items-center'>
           View all products and solutions
+          <Image src={arrowRightWhite} alt='Logo' className='' />
         </button>
       </div>
-      <div className='flex gap-20 bg-linear-to-bl from-white to-accent-light px-[14.44vw] pt-8 pb-32 justify-center items-center'>
+      <div className='flex gap-20 bg-linear-to-bl from-white to-accent-light px-[10vw] pt-8 pb-32 justify-center items-center'>
         <div className='flex flex-col gap-8 w-1/2'>
           <p className='font-bold text-[56px] text-text-gray900 leading-16'>
             Why EGNiS?
@@ -138,12 +153,42 @@ export default function Home() {
                 return (
                   <div key={why} className='gap-4 flex items-center'>
                     <div className='size-2 bg-main rounded-full' />
-                    <p>{why}</p>
+                    <p className='text-[#39404B] text-base'>{why}</p>
                   </div>
                 );
               })}
             </div>
           </div>
+        </div>
+        <Image src={whyEgnis} alt='Logo' className='' />
+      </div>
+      <div className='flex flex-col gap-16  bg-[#F9FFF2] px-[10vw] pt-8 pb-32  justify-center items-center'>
+        <p className='italic text-main text-xl font-medium w-fit'>
+          Product in Focus
+        </p>
+        <div className='flex gap-20 justify-center items-center'>
+          <div className='flex flex-col gap-8 w-1/2'>
+            <p className='font-bold text-[56px] text-text-gray900 leading-16'>
+              eHealth Nigeria <br /> System
+            </p>
+
+            <div className='flex flex-col gap-3'>
+              <p className='text-[#39404B] text-lg font-medium'>
+                Improving the quality and accessibility of healthcare for
+                everyone, everywhere in Nigeria
+              </p>
+              <p className='text-[#39404B] text-base mt-3'>
+                EHNS equips healthcare providers, government bodies, and
+                citizens with digital tools and solutions for quality and
+                accessible healthcare for all Nigerians
+              </p>
+            </div>
+            <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer flex gap-3 items-center mt-10'>
+              Discover More
+              <Image src={arrowRightWhite} alt='Logo' className='' />
+            </button>
+          </div>
+          <Image src={eHealth} alt='Logo' className='' />
         </div>
       </div>
     </div>
