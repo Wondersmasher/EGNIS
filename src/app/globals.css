@@ -6,10 +6,23 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --color-background: var(--background);
+  --color-foreground: var(--foreground); */
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
+  --font-inter: var(--font-inter)
+}
+
+@theme{
+  --color-main:#0F9918;
+  --color-accent:#CFEBD1;
+  --color-accent-light:#E7FFEE;
+  --color-accent-white:#F5F6F7;
+  --color-accent-gray:#D9D9D9;
+  --color-text:#42526B;
+  --color-text-gray900:#061C3D;
+  --color-text-gray700:#42526B;
+
 }
 
 @media (prefers-color-scheme: dark) {
