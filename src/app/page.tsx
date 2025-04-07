@@ -1,103 +1,192 @@
+"use client";
 import Image from "next/image";
+import { egnisLogoIcon } from "../../public/svgs";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className='min-h-screen font-[family-name:var(--font-inter)] bg-accent-white text-black'>
+      <div className='flex border-[3px] border-main px-[14.44vw] gap-6 py-3 justify-between'>
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src={egnisLogoIcon}
+          alt='Logo'
+          width={20}
+          height={20}
+          className='size-4'
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className='flex gap-8 items-center justify-center'>
+          {navTitles.map((title) => {
+            return (
+              <p
+                key={title}
+                className='text-xl font-medium hover:font-semibold  hover:text-main duration-500 cursor-pointer text-text'
+              >
+                {title}
+              </p>
+            );
+          })}
+          <button className='bg-main px-6 py-3 rounded-sm text-accent-white cursor-pointer'>
+            Register/Sign In
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className='flex flex-col gap-24 bg-linear-to-tr from-white to-accent-light px-[14.44vw] pt-8 pb-32 justify-center items-center'>
+        <p className='italic text-main text-xl font-medium w-fit'>
+          ABOUT EGNIS
+        </p>
+        <div className='flex gap-20'>
+          <div className='flex flex-col gap-8 w-1/2'>
+            <p className='font-bold text-[56px] text-text-gray900 leading-16'>
+              Transforming Governance Through Digital Infrastructure
+            </p>
+            <p className='text-text-gray700 text-base'>
+              The E-Government Nigeria System (EGNiS) is a robust and scalable
+              digital platform designed to automate and digitize government
+              processes and services across Nigeria at the federal, state, and
+              Local Government Area (LGA) levels. EGNiS serves as anintegrated
+              ERP system for government organizations, enabling efficient
+              service delivery, streamlined communication, and enhanced
+              transparency.
+            </p>
+            <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer'>
+              Read more{" "}
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className='flex flex-col gap-16  bg-linear-to-r from-white to-accent-light px-[14.44vw] pt-8 pb-32  justify-center items-center'>
+        <p className='italic text-main text-xl font-medium w-fit'>
+          EGNis Features{" "}
+        </p>
+        <div className='flex flex-col gap-3 text-text-gray900 items-center'>
+          <p className='text-[56px] font-semibold '>EGNiS Core</p>
+          <p className='text-lg max-w-2/3 leading-7 text-center'>
+            The foundational infrastructure of EGNiS, providing the standard
+            framework and solutions required for effective digital
+            transformation across all government levels.
+          </p>
+        </div>
+        <div className='flex flex-wrap gap-x-8 gap-y-6 w-full justify-center-safe'>
+          {feats.map((feat) => {
+            return (
+              <div
+                key={feat}
+                className='bg-white p-6 rounded-2xl flex flex-col justify-between gap-5 hover:shadow-lg duration-500 cursor-pointer w-[15.67vw]'
+              >
+                <div className='flex flex-col gap-5'>
+                  <div className='bg-black size-16 rounded-lg'></div>
+                  <p className='text-text-gray900 text-base font-medium'>
+                    {feat}
+                  </p>
+                </div>
+                <p className='text-main font-medium text-sm'>Learn more</p>
+              </div>
+            );
+          })}
+        </div>
+        <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer'>
+          Learn More About EGNiS Core
+        </button>
+      </div>
+      <div className='flex flex-col gap-16  bg-linear-to-r from-accent-light to-white px-[14.44vw] py-8  justify-center items-center'>
+        <div className='flex flex-col gap-3 text-text-gray900 items-center'>
+          <p className='text-[56px] font-semibold '>
+            Integrated Products and Solutions
+          </p>
+          <p className='text-lg max-w-2/3 leading-7 text-center'>
+            Additional services designed to address specialized government
+            operations and ensure comprehensive digital transformation.
+          </p>
+        </div>
+        <div className='flex flex-wrap gap-x-8 gap-y-6 w-full justify-center-safe'>
+          {prodAndSols.map((sol) => {
+            return (
+              <div
+                key={sol}
+                className='bg-white p-6 rounded-2xl flex flex-col justify-between items-center gap-5 shadow-lg cursor-pointer w-[21.67vw]'
+              >
+                <div className='flex flex-col gap-5 items-center'>
+                  <div className='bg-black size-16 rounded-lg'></div>
+                  <p className='text-text-gray900 text-base font-medium text-center'>
+                    {sol}
+                  </p>
+                </div>
+                <p className='text-main font-medium text-sm'>Learn more</p>
+              </div>
+            );
+          })}
+        </div>
+        <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer'>
+          View all products and solutions
+        </button>
+      </div>
+      <div className='flex gap-20 bg-linear-to-bl from-white to-accent-light px-[14.44vw] pt-8 pb-32 justify-center items-center'>
+        <div className='flex flex-col gap-8 w-1/2'>
+          <p className='font-bold text-[56px] text-text-gray900 leading-16'>
+            Why EGNiS?
+          </p>
+          <p className='text-text-gray700 text-lg font-medium'>
+            EGNiS is the most comprehensive and scalable digital governance
+            platform for Nigeria, designed to enhance efficiency, transparency,
+            and accessibility across all government levels.
+          </p>
+          <div className='flex flex-col gap-3'>
+            <p className='text-text-gray700 font-semibold text-lg'>
+              What Makes EGNiS Stand Out:
+            </p>
+            <div className='flex flex-col gap-2'>
+              {why.map((why) => {
+                return (
+                  <div key={why} className='gap-4 flex items-center'>
+                    <div className='size-2 bg-main rounded-full' />
+                    <p>{why}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
+
+const navTitles = [
+  "Home",
+  "About",
+  "Ecosystem",
+  "Platforms",
+  "Community",
+  "Resources",
+  "Demo",
+  "Contact us",
+];
+
+const feats = [
+  "E-Government Website with CMS.",
+  "Communication and Document Management",
+  "MDA Management System.",
+  "Citizen Portal",
+  "Data Analytics",
+  "Mobile Access",
+  "Task & Workflow Automation",
+  "Training & Support",
+];
+
+const prodAndSols = [
+  "State Central Billing and Payment Management System",
+  "State Tax Management System",
+  "State Land and Property Management with GIS",
+  "State Business Registration and Certification",
+  "E-Procurement Management System",
+  "Human Resource Management System (HRMS)",
+];
+
+const why = [
+  "Standardization: Unified approach for seamless e-government services.",
+  "Security: Robust protocols for data protection and privacy.",
+  "Scalability: Built to evolve and expand with growing needs.",
+  "User-Centric Design: Intuitive experience for governments and citizens.",
+  "Interoperability: Smooth communication and data sharing across all levels.",
+  "Mobile & Offline Access: Inclusive and reliable, even in remote areas.",
+  "Data Analytics: Real-time insights for informed decision-making.",
+];
