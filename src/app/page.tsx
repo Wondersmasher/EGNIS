@@ -1,9 +1,17 @@
 "use client";
 import Image from "next/image";
 import {
+  amazon,
   arrowRightGreen,
   arrowRightWhite,
+  dribble,
   egnisLogoIcon2,
+  google,
+  lenovo,
+  microsoft,
+  netflix,
+  slack,
+  youtube,
 } from "../../public/svgs";
 import { eHealth, transforming, whyEgnis } from "../../public/images";
 
@@ -189,6 +197,37 @@ export default function Home() {
             </button>
           </div>
           <Image src={eHealth} alt='Logo' className='' />
+        </div>
+      </div>
+      <div className='flex gap-20 py-32 px-[10vw] bg-[#F5F6F7]'>
+        <p className='text-[42px] font-bold text-text-gray900 whitespace-nowrap'>
+          EGNiS is Trusted By
+        </p>
+        <div className='flex gap-6 flex-wrap'>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+            <Image src={youtube} alt='Logo' className='' />
+          </div>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+            <Image src={slack} alt='Logo' className='' />
+          </div>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+            <Image src={amazon} alt='Logo' className='' />
+          </div>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+            <Image src={microsoft} alt='Logo' className='' />
+          </div>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+            <Image src={lenovo} alt='Logo' className='' />
+          </div>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+            <Image src={netflix} alt='Logo' className='' />
+          </div>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+            <Image src={google} alt='Logo' className='' />
+          </div>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+            <Image src={dribble} alt='Logo' className='' />
+          </div>
         </div>
       </div>
     </div>
