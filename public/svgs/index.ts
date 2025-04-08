@@ -14,6 +14,7 @@ import security from "./security.svg";
 import slack from "./slack.svg";
 import youtube from "./youtube.svg";
 
+export * from "./Icons";
 export {
   egnisLogoIcon,
   egnisLogoIcon2,
