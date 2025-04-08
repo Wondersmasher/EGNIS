@@ -13,6 +13,15 @@ import netflix from "./netflix.svg";
 import security from "./security.svg";
 import slack from "./slack.svg";
 import youtube from "./youtube.svg";
+import checkmark from "./checkmark.svg";
+import emailIcon from "./email.svg";
+import interoperability from "./interoperatability.svg";
+import mobileApproach from "./mobile-approach.svg";
+import secure from "./secure.svg";
+import scalability from "./scalability.svg";
+import offlineAcess from "./offline-access.svg";
+import standard from "./standard.svg";
+import userCentric from "./user-centric.svg";
 
 export * from "./Icons";
 export {
@@ -31,4 +40,13 @@ export {
   security,
   slack,
   youtube,
+  checkmark,
+  emailIcon,
+  interoperability,
+  mobileApproach,
+  secure,
+  scalability,
+  offlineAcess,
+  standard,
+  userCentric,
 };
