@@ -146,24 +146,16 @@ export default function Home() {
           {feats.map((feat) => {
             return (
               <div
-                key={feat}
+                key={feat.title}
                 className='bg-white p-6 rounded-2xl flex flex-col justify-between gap-5 hover:shadow-lg duration-500 cursor-pointer w-[15.67vw] group'
               >
                 <div className='flex flex-col gap-5'>
                   <div className='bg-icon-bg size-16 rounded-lg flex justify-center items-center group-hover:bg-main duration-500'>
-                    <Image
-                      src={arrowRightGreen}
-                      alt='Logo'
-                      className='group-hover:hidden'
-                    />
-                    <Image
-                      src={arrowRightWhite}
-                      alt='Logo'
-                      className='group-hover:block hidden'
-                    />
-                  </div>{" "}
+                    {feat.iconFilled}
+                    {feat.iconUnfilled}
+                  </div>
                   <p className='text-text-gray900 text-base font-medium'>
-                    {feat}
+                    {feat.title}
                   </p>
                 </div>
                 <button className='text-main font-bold  text-sm flex gap-2 items-center'>
@@ -551,17 +543,71 @@ const navTitles = [
   "Contact us",
 ];
 
-const feats = [
-  "E-Government Website with CMS.",
-  "Communication and Document Management",
-  "MDA Management System.",
-  "Citizen Portal",
-  "Data Analytics",
-  "Mobile Access",
-  "Task & Workflow Automation",
-  "Training & Support",
-];
+// const feats = [
+//   "E-Government Website with CMS.",
+//   "Communication and Document Management",
+//   "MDA Management System.",
+//   "Citizen Portal",
+//   "Data Analytics",
+//   "Mobile Access",
+//   "Task & Workflow Automation",
+//   "Training & Support",
+// ];
 
+const feats = [
+  {
+    title: "E-Government Website with CMS.",
+    iconUnfilled: <StateLandIcon className='group-hover:hidden' />,
+    iconFilled: <StateLandWhiteIcon className='group-hover:block hidden ' />,
+  },
+  {
+    title: "Communication and Document Management",
+    iconUnfilled: <StateBusinessIcon className='group-hover:hidden' />,
+    iconFilled: (
+      <StateBusinessWhiteIcon className='group-hover:block hidden ' />
+    ),
+  },
+  {
+    title: "MDA Management System.",
+    iconUnfilled: <StateBusinessIcon className='group-hover:hidden' />,
+    iconFilled: (
+      <StateBusinessWhiteIcon className='group-hover:block hidden ' />
+    ),
+  },
+  {
+    title: "Citizen Portal",
+    iconUnfilled: <StateBusinessIcon className='group-hover:hidden' />,
+    iconFilled: (
+      <StateBusinessWhiteIcon className='group-hover:block hidden ' />
+    ),
+  },
+  {
+    title: "Data Analytics",
+    iconUnfilled: <EProcureMentIcon className='group-hover:hidden' />,
+    iconFilled: <EProcureMentWhiteIcon className='group-hover:block hidden ' />,
+  },
+  {
+    title: "Mobile Access",
+    iconUnfilled: <HumanResourceIcon className='group-hover:hidden' />,
+    iconFilled: (
+      <HumanResourceWhiteIcon className='group-hover:block hidden ' />
+    ),
+  },
+  {
+    title: "Task & Workflow Automation",
+    iconUnfilled: <HumanResourceIcon className='group-hover:hidden' />,
+    iconFilled: (
+      <HumanResourceWhiteIcon className='group-hover:block hidden ' />
+    ),
+  },
+  {
+    title: "Training & Support",
+    iconUnfilled: <HumanResourceIcon className='group-hover:hidden' />,
+    iconFilled: (
+      <HumanResourceWhiteIcon className='group-hover:block hidden ' />
+    ),
+  },
+];
 const prodAndSols = [
   {
     title: "State Central Billing and Payment Management System",
