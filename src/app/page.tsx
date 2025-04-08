@@ -6,6 +6,7 @@ import {
   arrowRightWhite,
   BasketBall,
   BasketBallFilled,
+  checkmark,
   dribble,
   egnisLogoBig,
   egnisLogoIcon2,
@@ -234,7 +235,8 @@ export default function Home() {
               {why.map((why) => {
                 return (
                   <div key={why} className='gap-4 flex items-center'>
-                    <div className='size-2 bg-main rounded-full' />
+                    <Image src={checkmark} alt='Logo' className='' />
+
                     <p className='text-[#39404B] text-base'>{why}</p>
                   </div>
                 );
