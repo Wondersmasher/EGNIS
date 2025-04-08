@@ -5,19 +5,26 @@ import {
   arrowRightGreen,
   arrowRightWhite,
   dribble,
+  egnisLogoBig,
   egnisLogoIcon2,
   google,
   lenovo,
   microsoft,
   netflix,
+  security,
   slack,
   youtube,
 } from "../../public/svgs";
-import { eHealth, transforming, whyEgnis } from "../../public/images";
+import {
+  eHealth,
+  nigeriaFlag,
+  transforming,
+  whyEgnis,
+} from "../../public/images";
 
 export default function Home() {
   return (
-    <div className='min-h-screen font-[family-name:var(--font-inter)]'>
+    <div className='min-h-screen font-[family-name:var(--font-inter)] text-black bg-white'>
       <div className='flex border-[3px] border-main bg-white px-[10vw] gap-6 py-3 justify-between'>
         <Image
           src={egnisLogoIcon2}
@@ -42,6 +49,37 @@ export default function Home() {
           </button>
         </div>
       </div>
+
+      <div
+        className='flex  gap-20 px-[10vw] pb-8 pt-32 justify-center items-center'
+        style={{
+          backgroundImage: "url('/images/Background.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "100vh",
+          width: "100%",
+        }}
+      >
+        <div className='flex flex-col gap-8 w-1/2'>
+          <p className='font-bold text-[56px] text-text-gray900 leading-16'>
+            Empowering Digital Transformation Across Nigeria{" "}
+          </p>
+          <p className='text-text-gray700 text-base'>
+            EGNiS provides robust, secured and scalable digital infrastructure
+            for Nigerian governments to deliver seamless services to citizens
+            and businesses.
+          </p>
+          <div className='flex gap-4'>
+            <button className='bg-main font-bold px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer'>
+              Request a Demo{" "}
+            </button>
+            <button className='bg-accent font-bold px-6 py-3 rounded-sm text-main w-fit cursor-pointer'>
+              Know More{" "}
+            </button>
+          </div>
+        </div>
+        <div className='flex-1' />{" "}
+      </div>
       <div className='flex flex-col gap-24 bg-linear-to-tr from-white to-accent-light px-[10vw] pt-8 pb-32 justify-center items-center'>
         <p className='italic text-main text-xl font-medium w-fit'>
           ABOUT EGNIS
@@ -61,7 +99,7 @@ export default function Home() {
               service delivery, streamlined communication, and enhanced
               transparency.
             </p>
-            <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer'>
+            <button className='bg-main font-bold px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer'>
               Read more{" "}
             </button>
           </div>
@@ -84,15 +122,26 @@ export default function Home() {
             return (
               <div
                 key={feat}
-                className='bg-white p-6 rounded-2xl flex flex-col justify-between gap-5 hover:shadow-lg duration-500 cursor-pointer w-[15.67vw]'
+                className='bg-white p-6 rounded-2xl flex flex-col justify-between gap-5 hover:shadow-lg duration-500 cursor-pointer w-[15.67vw] group'
               >
                 <div className='flex flex-col gap-5'>
-                  <div className='bg-icon-bg size-16 rounded-lg'></div>
+                  <div className='bg-icon-bg size-16 rounded-lg flex justify-center items-center group-hover:bg-main duration-500'>
+                    <Image
+                      src={arrowRightGreen}
+                      alt='Logo'
+                      className='group-hover:hidden'
+                    />
+                    <Image
+                      src={arrowRightWhite}
+                      alt='Logo'
+                      className='group-hover:block hidden'
+                    />
+                  </div>{" "}
                   <p className='text-text-gray900 text-base font-medium'>
                     {feat}
                   </p>
                 </div>
-                <button className='text-main font-medium text-sm flex gap-2 items-center'>
+                <button className='text-main font-bold  text-sm flex gap-2 items-center'>
                   Learn more
                   <Image src={arrowRightGreen} alt='Logo' className='' />
                 </button>{" "}
@@ -121,15 +170,26 @@ export default function Home() {
             return (
               <div
                 key={sol}
-                className='bg-white p-6 rounded-2xl flex flex-col justify-between items-center gap-5 shadow-lg cursor-pointer w-[21.67vw]'
+                className='bg-white p-6 rounded-2xl flex flex-col justify-between items-center gap-5 shadow-lg cursor-pointer w-[21.67vw] group'
               >
                 <div className='flex flex-col gap-5 items-center'>
-                  <div className='bg-icon-bg size-16 rounded-lg'></div>
+                  <div className='bg-icon-bg size-16 rounded-lg flex justify-center items-center group-hover:bg-main duration-500'>
+                    <Image
+                      src={arrowRightGreen}
+                      alt='Logo'
+                      className='group-hover:hidden'
+                    />
+                    <Image
+                      src={arrowRightWhite}
+                      alt='Logo'
+                      className='group-hover:block hidden'
+                    />
+                  </div>
                   <p className='text-text-gray900 text-base font-medium text-center'>
                     {sol}
                   </p>
                 </div>
-                <button className='text-main font-medium text-sm flex gap-2 items-center'>
+                <button className='text-main font-bold text-sm flex gap-2 items-center'>
                   Learn more
                   <Image src={arrowRightGreen} alt='Logo' className='' />
                 </button>
@@ -170,6 +230,44 @@ export default function Home() {
         </div>
         <Image src={whyEgnis} alt='Logo' className='' />
       </div>
+      <div className='flex flex-col gap-16  bg-white px-[10vw] pt-8 pb-20  justify-center items-center'>
+        <p className='italic text-main text-xl font-medium w-fit'>
+          Architecture and Key Characteristics
+        </p>
+        <div className='flex flex-col gap-3 text-text-gray900 items-center'>
+          <p className='text-[56px] font-semibold text-text-gray900'>
+            Built for Performance, Security, and Scalability
+          </p>
+          <p className='text-lg max-w-2/3 leading-7 text-center text-text-gray700'>
+            EGNiS is designed with a secure, scalable, and user-centric
+            architecture to ensure seamless interoperability and efficient
+            service delivery across all levels of government.
+          </p>
+        </div>
+        <div className='flex flex-wrap gap-x-8 gap-y-16 w-full justify-center-safe'>
+          {architectures.map((architecture) => {
+            return (
+              <div
+                key={architecture.title}
+                className='flex gap-8 items-center w-[45%]'
+              >
+                <div className='flex justify-center items-center min-w-[79px] max-w-[79px] aspect-square rounded-full bg-main'>
+                  <Image src={security} alt='Logo' className='' />
+                </div>
+                <div className='flex flex-col gap-'>
+                  <p className='font-medium text-lg'>{architecture.title}</p>
+                  <p className='text-base'>{architecture.text}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <button className='bg-main font-bold px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer flex gap-3 items-center'>
+          Explore More
+          <Image src={arrowRightWhite} alt='Logo' className='' />
+        </button>
+      </div>
       <div className='flex flex-col gap-16  bg-[#F9FFF2] px-[10vw] pt-8 pb-32  justify-center items-center'>
         <p className='italic text-main text-xl font-medium w-fit'>
           Product in Focus
@@ -191,7 +289,7 @@ export default function Home() {
                 accessible healthcare for all Nigerians
               </p>
             </div>
-            <button className='bg-main px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer flex gap-3 items-center mt-10'>
+            <button className='bg-main font-bold px-6 py-3 rounded-sm text-accent-white w-fit cursor-pointer flex gap-3 items-center mt-10'>
               Discover More
               <Image src={arrowRightWhite} alt='Logo' className='' />
             </button>
@@ -199,6 +297,17 @@ export default function Home() {
           <Image src={eHealth} alt='Logo' className='' />
         </div>
       </div>
+
+      {/*  */}
+      {/* <div className='bg-white'>
+        <div className='skewer flex gap-20 px-[10vw] bg-main py-32 justify-baseline '>
+          lorem10000
+          <div className='relative w-1/2'>
+            <div className='bg-red-500 size-56 absolute top-0 right-0'></div>
+          </div>
+        </div>
+      </div> */}
+
       <div className='flex gap-20 py-32 px-[10vw] bg-[#F5F6F7]'>
         <p className='text-[42px] font-bold text-text-gray900 whitespace-nowrap'>
           EGNiS is Trusted By
@@ -227,6 +336,76 @@ export default function Home() {
           </div>
           <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
             <Image src={dribble} alt='Logo' className='' />
+          </div>
+        </div>
+      </div>
+      <div className='flex gap-20 justify-between px-[10vw] pb-20 pt-[193px] relative'>
+        <Image
+          src={nigeriaFlag}
+          alt='Logo'
+          className='absolute z-10 top-14 left-[550px] left-'
+        />
+        <Image src={egnisLogoBig} alt='Logo' className='' />
+        <div className='flex gap-'>
+          <div className='flex flex-col gap-2'>
+            <p className='font-medium text-base text-[#061C3D] h-9 uppercase w-[200px]'>
+              Quick Links
+            </p>
+            <div className='flex flex-col gap-'>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Portfolio
+              </p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>About</p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Services
+              </p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Pricing Plans
+              </p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Contact
+              </p>
+            </div>
+          </div>
+          <div className='flex flex-col gap-2'>
+            <p className='font-medium text-base text-[#061C3D] h-9 uppercase w-[200px]'>
+              Services
+            </p>
+            <div className='flex flex-col gap-'>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                UI/UX Design
+              </p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Branding
+              </p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Illustration
+              </p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Design Concept{" "}
+              </p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                App Design
+              </p>
+            </div>
+          </div>
+          <div className='flex flex-col gap-2'>
+            <p className='font-medium text-base text-[#061C3D] h-9 uppercase w-[200px]'>
+              Product
+            </p>
+            <div className='flex flex-col gap-'>
+              <p className='font-medium text-base text-[#061C3D] h-9'>Figma</p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>Adobe</p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Dribbble
+              </p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Behance{" "}
+              </p>
+              <p className='font-medium text-base text-[#061C3D] h-9'>
+                Themeforest
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -273,4 +452,39 @@ const why = [
   "Interoperability: Smooth communication and data sharing across all levels.",
   "Mobile & Offline Access: Inclusive and reliable, even in remote areas.",
   "Data Analytics: Real-time insights for informed decision-making.",
+];
+
+const architectures = [
+  {
+    title: "Standardization",
+    text: "Consistent framework for e-government applications across all levels.",
+  },
+  {
+    title: "Scalability",
+    text: "Built to grow and adapt to evolving government needs",
+  },
+  {
+    title: "Security",
+    text: "Robust protocols to safeguard government data and citizen information",
+  },
+  {
+    title: "Mobile-First Approach",
+    text: "Optimized for mobile use, enhancing accessibility.",
+  },
+  {
+    title: "User-Centric Design",
+    text: "Enhanced user experience for citizens and government staff.",
+  },
+  {
+    title: "Secure Authentication",
+    text: "Uses biometrics, OTPs, and other methods for data protection.",
+  },
+  {
+    title: "Interoperability",
+    text: "Seamless communication and data sharing across systems.",
+  },
+  {
+    title: "Offline Accessibility",
+    text: "Ensures service delivery even without internet connectivity",
+  },
 ];
