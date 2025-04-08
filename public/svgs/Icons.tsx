@@ -481,30 +481,30 @@ export const StateLandIcon = ({ className }: { className?: string }) => {
       <path
         d='M18 21.3755V34.8755'
         stroke='#0F9918'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M18 21.3755C19.5533 21.3755 20.8125 20.1163 20.8125 18.563C20.8125 17.0097 19.5533 15.7505 18 15.7505C16.4467 15.7505 15.1875 17.0097 15.1875 18.563C15.1875 20.1163 16.4467 21.3755 18 21.3755Z'
         stroke='#0F9918'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M10.125 10.1255V4.50049C10.125 4.20212 10.2435 3.91597 10.4545 3.70499C10.6655 3.49401 10.9516 3.37549 11.25 3.37549H24.75C25.0484 3.37549 25.3345 3.49401 25.5455 3.70499C25.7565 3.91597 25.875 4.20212 25.875 4.50049V10.1255'
         stroke='#0F9918'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M10.1258 10.1255L6.27459 17.9204C6.1832 18.1054 6.14444 18.3119 6.16254 18.5175C6.18064 18.723 6.25491 18.9196 6.37722 19.0857L18.0008 34.8755L29.6244 19.0856C29.7467 18.9195 29.821 18.7229 29.8391 18.5174C29.8572 18.3119 29.8184 18.1054 29.727 17.9204L25.8758 10.1255H10.1258Z'
         stroke='#0F9918'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </svg>
   );
@@ -522,30 +522,30 @@ export const StateLandWhiteIcon = ({ className }: { className?: string }) => {
       <path
         d='M18 21.3755V34.8755'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M18 21.3755C19.5533 21.3755 20.8125 20.1163 20.8125 18.563C20.8125 17.0097 19.5533 15.7505 18 15.7505C16.4467 15.7505 15.1875 17.0097 15.1875 18.563C15.1875 20.1163 16.4467 21.3755 18 21.3755Z'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M10.125 10.1255V4.50049C10.125 4.20212 10.2435 3.91597 10.4545 3.70499C10.6655 3.49401 10.9516 3.37549 11.25 3.37549H24.75C25.0484 3.37549 25.3345 3.49401 25.5455 3.70499C25.7565 3.91597 25.875 4.20212 25.875 4.50049V10.1255'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M10.1258 10.1255L6.27459 17.9204C6.1832 18.1054 6.14444 18.3119 6.16254 18.5175C6.18064 18.723 6.25491 18.9196 6.37722 19.0857L18.0008 34.8755L29.6244 19.0856C29.7467 18.9195 29.821 18.7229 29.8391 18.5174C29.8572 18.3119 29.8184 18.1054 29.727 17.9204L25.8758 10.1255H10.1258Z'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </svg>
   );
