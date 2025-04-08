@@ -10,6 +10,7 @@ import {
   dribble,
   egnisLogoBig,
   egnisLogoIcon2,
+  emailIcon,
   EProcureMentIcon,
   EProcureMentWhiteIcon,
   Facebook,
@@ -322,7 +323,7 @@ export default function Home() {
             consequat, varius sapien convallis, tincidunt nisl.{" "}
           </p>
           <div className='flex gap-3 text-white'>
-            <div className='flex justify-center items-center'></div>
+            <Image src={emailIcon} alt='Logo' className='' />
             <div className='flex flex-col gap- '>
               <p className='uppercase text-base font-medium'>Email us</p>
               <p className='text-2xl font-medium'>info@golio.com</p>
