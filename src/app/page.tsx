@@ -18,13 +18,19 @@ import {
   HumanResourceWhiteIcon,
   Instagram,
   InstagramFilled,
+  interoperability,
   lenovo,
   LinkedIn,
   LinkedInFilled,
   microsoft,
+  mobileApproach,
   netflix,
+  offlineAcess,
+  scalability,
+  secure,
   security,
   slack,
+  standard,
   StateBusinessIcon,
   StateBusinessWhiteIcon,
   StateCentralIcon,
@@ -35,6 +41,7 @@ import {
   StateTaxWhiteIcon,
   Twitter,
   TwitterFilled,
+  userCentric,
   youtube,
 } from "../../public/svgs";
 import {
@@ -259,7 +266,7 @@ export default function Home() {
                 className='flex gap-8 items-center w-[45%]'
               >
                 <div className='flex justify-center items-center min-w-[79px] max-w-[79px] aspect-square rounded-full bg-main'>
-                  <Image src={security} alt='Logo' className='' />
+                  <Image src={architecture.icon} alt='Logo' className='' />
                 </div>
                 <div className='flex flex-col gap-'>
                   <p className='font-medium text-lg'>{architecture.title}</p>
@@ -636,33 +643,41 @@ const architectures = [
   {
     title: "Standardization",
     text: "Consistent framework for e-government applications across all levels.",
+    icon: standard,
   },
   {
     title: "Scalability",
     text: "Built to grow and adapt to evolving government needs",
+    icon: scalability,
   },
   {
     title: "Security",
     text: "Robust protocols to safeguard government data and citizen information",
+    icon: security,
   },
   {
     title: "Mobile-First Approach",
     text: "Optimized for mobile use, enhancing accessibility.",
+    icon: mobileApproach,
   },
   {
     title: "User-Centric Design",
     text: "Enhanced user experience for citizens and government staff.",
+    icon: userCentric,
   },
   {
     title: "Secure Authentication",
     text: "Uses biometrics, OTPs, and other methods for data protection.",
+    icon: secure,
   },
   {
     title: "Interoperability",
     text: "Seamless communication and data sharing across systems.",
+    icon: interoperability,
   },
   {
     title: "Offline Accessibility",
     text: "Ensures service delivery even without internet connectivity",
+    icon: offlineAcess,
   },
 ];
