@@ -33,8 +33,6 @@ import {
   StateLandWhiteIcon,
   StateTaxIcon,
   StateTaxWhiteIcon,
-  // StateTaxIcon,
-  // StateTaxWhiteIcon,
   Twitter,
   TwitterFilled,
   youtube,
@@ -307,16 +305,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/*  */}
-      {/* <div className='bg-white'>
-        <div className='skewer flex gap-20 px-[10vw] bg-main py-32 justify-baseline '>
-          lorem10000
-          <div className='relative w-1/2'>
-            <div className='bg-red-500 size-56 absolute top-0 right-0'></div>
-          </div>
-        </div>
-      </div> */}
-
       <div className='flex gap-20 py-32 px-[10vw] bg-main'>
         <div className='flex flex-col gap-6 w-1/2 text-white'>
           <p className='text-white text-[40px] font-bold'>Request For a Demo</p>
@@ -542,17 +530,6 @@ const navTitles = [
   "Demo",
   "Contact us",
 ];
-
-// const feats = [
-//   "E-Government Website with CMS.",
-//   "Communication and Document Management",
-//   "MDA Management System.",
-//   "Citizen Portal",
-//   "Data Analytics",
-//   "Mobile Access",
-//   "Task & Workflow Automation",
-//   "Training & Support",
-// ];
 
 const feats = [
   {
