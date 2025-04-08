@@ -150,7 +150,7 @@ export default function Home() {
                 className='bg-white p-6 rounded-2xl flex flex-col justify-between gap-5 hover:shadow-lg duration-500 cursor-pointer w-[15.67vw] group'
               >
                 <div className='flex flex-col gap-5'>
-                  <div className='bg-icon-bg size-16 rounded-lg flex justify-center items-center group-hover:bg-main duration-500'>
+                  <div className='bg-icon-bg size-16 rounded-lg flex justify-center items-center group-hover:bg-main'>
                     {feat.iconFilled}
                     {feat.iconUnfilled}
                   </div>
@@ -190,7 +190,7 @@ export default function Home() {
                 className='bg-white p-6 rounded-2xl flex flex-col justify-between items-center gap-5 shadow-lg cursor-pointer w-[21.67vw] group'
               >
                 <div className='flex flex-col gap-5 items-center'>
-                  <div className='bg-icon-bg size-16 rounded-lg flex justify-center items-center group-hover:bg-main duration-500'>
+                  <div className='bg-icon-bg size-16 rounded-lg flex justify-center items-center group-hover:bg-main'>
                     {sol.iconFilled}
                     {sol.iconUnfilled}
                   </div>
