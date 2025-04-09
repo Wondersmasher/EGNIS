@@ -56,8 +56,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className='min-h-screen font-[family-name:var(--font-inter)] text-black bg-white'>
-      <div className='flex border-[3px] border-main bg-white px-[10vw] gap-6 py-3 justify-between'>
+    <div className='min-h-screen w-screen overflow-hidden font-[family-name:var(--font-inter)] text-black bg-white'>
+      <div className='flex border-[3px] border-main bg-white px-[5vw] md:px-[10vw] gap-6 py-3 justify-between'>
         <Image
           src={egnisLogoIcon2}
           alt='Logo'
@@ -65,7 +65,7 @@ export default function Home() {
           height={50}
           className=''
         />
-        <div className='flex gap-[1.5vw] items-center justify-center'>
+        <div className=' gap-[1.5vw] items-center justify-center hidden md:flex'>
           {navTitles.map((title) => {
             return (
               <p
@@ -83,7 +83,7 @@ export default function Home() {
       </div>
 
       <div
-        className='flex  gap-20 px-[10vw] pb-8 pt-32 justify-center items-center'
+        className='flex  gap-20 px-[5vw] md:px-[10vw] pb-8 pt-32 justify-center items-center flex-wrap'
         style={{
           backgroundImage: "url('/images/Background.png')",
           backgroundSize: "cover",
@@ -92,7 +92,7 @@ export default function Home() {
           width: "100%",
         }}
       >
-        <div className='flex flex-col gap-8 w-1/2'>
+        <div className='flex flex-col gap-8 w-full md:w-1/2'>
           <p className='font-bold text-5xl text-text-gray900 leading-16'>
             Empowering Digital Transformation Across Nigeria{" "}
           </p>
@@ -112,13 +112,13 @@ export default function Home() {
         </div>
         <div className='flex-1' />{" "}
       </div>
-      <div className='flex flex-col gap-24 bg-linear-to-tr from-white to-accent-light px-[10vw] pt-8 pb-32 justify-center items-center'>
+      <div className='flex flex-col gap-24 bg-linear-to-tr from-white to-accent-light px-[5vw] md:px-[10vw] pt-8 pb-32 justify-center items-center'>
         <p className='italic text-main text-lg font-medium w-fit'>
           ABOUT EGNIS
         </p>
-        <div className='flex gap-20'>
+        <div className='flex gap-20 flex-wrap'>
           <Image src={transforming} alt='Logo' className='' />
-          <div className='flex flex-col gap-8 w-1/2'>
+          <div className='flex flex-col gap-8 w-full md:w-1/2'>
             <p className='font-bold text-5xl text-text-gray900 leading-16'>
               Transforming Governance Through Digital Infrastructure
             </p>
@@ -137,13 +137,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col gap-16  bg-accent-light px-[10vw] pt-8 pb-32  justify-center items-center'>
+      <div className='flex flex-col gap-16  bg-accent-light px-[5vw] md:px-[10vw] pt-8 pb-32  justify-center items-center'>
         <p className='italic text-main text-lg font-medium w-fit'>
           EGNis Features{" "}
         </p>
         <div className='flex flex-col gap-3 text-text-gray900 items-center'>
           <p className='text-5xl font-semibold '>EGNiS Core</p>
-          <p className='text-lg max-w-2/3 leading-7 text-center'>
+          <p className='text-lg w-full md:max-w-2/3 leading-7 text-center'>
             The foundational infrastructure of EGNiS, providing the standard
             framework and solutions required for effective digital
             transformation across all government levels.
@@ -154,7 +154,7 @@ export default function Home() {
             return (
               <div
                 key={feat.title}
-                className='bg-white p-6 rounded-2xl flex flex-col justify-between gap-5 hover:shadow-lg duration-500 cursor-pointer w-[15.67vw] group'
+                className='bg-white p-6 rounded-2xl flex flex-col justify-between gap-5 hover:shadow-lg duration-500 cursor-pointer w-full md:w-[15.67vw] group'
               >
                 <div className='flex flex-col gap-5'>
                   <div className='bg-icon-bg size-16 rounded-lg flex justify-center items-center group-hover:bg-main'>
@@ -179,12 +179,12 @@ export default function Home() {
           <Image src={arrowRightWhite} alt='Logo' className='' />
         </button>
       </div>
-      <div className='flex flex-col gap-16  bg-accent-light px-[10vw] py-8  justify-center items-center'>
+      <div className='flex flex-col gap-16  bg-accent-light px-[5vw] md:px-[10vw] py-8  justify-center items-center'>
         <div className='flex flex-col gap-3 text-text-gray900 items-center'>
           <p className='text-5xl font-semibold '>
             Integrated Products and Solutions
           </p>
-          <p className='text-lg max-w-2/3 leading-7 text-center'>
+          <p className='text-lg w-full md:max-w-2/3 leading-7 text-center'>
             Additional services designed to address specialized government
             operations and ensure comprehensive digital transformation.
           </p>
@@ -194,7 +194,7 @@ export default function Home() {
             return (
               <div
                 key={sol.title}
-                className='bg-white p-6 rounded-2xl flex flex-col justify-between items-center gap-5 shadow-lg cursor-pointer w-[21.67vw] group'
+                className='bg-white p-6 rounded-2xl flex flex-col justify-between items-center gap-5 shadow-lg cursor-pointer w-full md:w-[21.67vw] group'
               >
                 <div className='flex flex-col gap-5 items-center'>
                   <div className='bg-icon-bg size-16 rounded-lg flex justify-center items-center group-hover:bg-main'>
@@ -218,8 +218,8 @@ export default function Home() {
           <Image src={arrowRightWhite} alt='Logo' className='' />
         </button>
       </div>
-      <div className='flex gap-20 bg-linear-to-r from-white to-accent-light px-[10vw] pt-8 pb-32 justify-center items-center'>
-        <div className='flex flex-col gap-8 w-1/2'>
+      <div className='flex gap-x-20 gap-y-6 bg-linear-to-r from-white to-accent-light px-[5vw] md:px-[10vw] pt-8 pb-32 justify-center items-center flex-wrap'>
+        <div className='flex flex-col gap-8 w-full md:w-1/2'>
           <p className='font-bold text-5xl text-text-gray900 leading-16'>
             Why EGNiS?
           </p>
@@ -247,7 +247,7 @@ export default function Home() {
         </div>
         <Image src={whyEgnis} alt='Logo' className='' />
       </div>
-      <div className='flex flex-col gap-16  bg-white px-[10vw] pt-8 pb-20  justify-center items-center'>
+      <div className='flex flex-col gap-16  bg-white px-[5vw] md:px-[10vw] pt-8 pb-20  justify-center items-center'>
         <p className='italic text-main text-lg font-medium w-fit'>
           Architecture and Key Characteristics
         </p>
@@ -255,18 +255,18 @@ export default function Home() {
           <p className='text-5xl font-semibold text-text-gray900'>
             Built for Performance, Security, and Scalability
           </p>
-          <p className='text-lg max-w-2/3 leading-7 text-center text-text-gray700'>
+          <p className='text-lg w-full md:max-w-2/3 leading-7 text-center text-text-gray700'>
             EGNiS is designed with a secure, scalable, and user-centric
             architecture to ensure seamless interoperability and efficient
             service delivery across all levels of government.
           </p>
         </div>
-        <div className='flex flex-wrap gap-x-8 gap-y-16 w-full justify-center-safe'>
+        <div className='flex flex-wrap gap-x-8 gap-y-8 w-full justify-center-safe'>
           {architectures.map((architecture) => {
             return (
               <div
                 key={architecture.title}
-                className='flex gap-8 items-center w-[45%]'
+                className='flex gap-8 items-center w-full md:w-[45%]'
               >
                 <div className='flex justify-center items-center min-w-[79px] max-w-[79px] aspect-square rounded-full bg-main'>
                   <Image src={architecture.icon} alt='Logo' className='' />
@@ -285,12 +285,12 @@ export default function Home() {
           <Image src={arrowRightWhite} alt='Logo' className='' />
         </button>
       </div>
-      <div className='flex flex-col gap-16  bg-[#F9FFF2] px-[10vw] pt-8 pb-32  justify-center items-center'>
+      <div className='flex flex-col gap-16  bg-[#F9FFF2] px-[5vw] md:px-[10vw] pt-8 pb-32  justify-center items-center'>
         <p className='italic text-main text-lg font-medium w-fit'>
           Product in Focus
         </p>
-        <div className='flex gap-20 justify-center items-center'>
-          <div className='flex flex-col gap-8 w-1/2'>
+        <div className='flex gap-20 justify-center items-center flex-wrap'>
+          <div className='flex flex-col gap-8 w-full md:w-1/2'>
             <p className='font-bold text-5xl text-text-gray900 leading-16'>
               eHealth Nigeria <br /> System
             </p>
@@ -315,8 +315,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='flex gap-20 py-32 px-[10vw] bg-main'>
-        <div className='flex flex-col gap-6 w-1/2 text-white'>
+      <div className='flex gap-20 py-32 px-[5vw] md:px-[10vw] bg-main flex-wrap'>
+        <div className='flex flex-col gap-6 w-full md:w-1/2 text-white'>
           <p className='text-white text-[40px] font-bold'>Request For a Demo</p>
           <p>
             Aenean vestibulum felis nec egestas fringilla. Duis non felis
@@ -330,7 +330,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-white rounded-2xl p-12 flex flex-col gap-6 w-[648px]'>
+        <div className='bg-white rounded-lg md:rounded-2xl p-4 md:p-12 flex flex-col gap-6 w-full md:w-[648px]'>
           <p className='text-text-gray900 font-bold text-2xl'>
             Request A Demo — let’s work together.
           </p>
@@ -339,7 +339,7 @@ export default function Home() {
             something exciting. Or do you need our help? Feel free to contact
             us.
           </p>
-          <div className='flex gap-4'>
+          <div className='flex gap-x-4 gap-y-6 flex-wrap'>
             <div className='flex flex-col gap-2 flex-1'>
               <p className='text-text-gray900 text-sm'>Name</p>
               <input
@@ -411,73 +411,73 @@ export default function Home() {
         <Image
           src={nigeriaFlag}
           alt='Logo'
-          className='absolute z-10 top-14 left-[550px] left-'
+          className='absolute z-10 top-1/3 left-4 md:top-14 md:left-[550px] left-'
         />
         <Image src={egnisLogoBig} alt='Logo' className='' />
         <div className='flex flex-col gap-5'>
-          <div className='flex z-10'>
-            <div className='flex flex-col gap-2'>
-              <p className='font-medium text-base text-[#061C3D] h-9 uppercase w-[200px]'>
+          <div className='flex z-10 flex-wrap  gap-10 md:gap-20'>
+            <div className='flex flex-col gap-2 flex-1'>
+              <p className='font-medium text-base text-[#061C3D] h-9 uppercase'>
                 Quick Links
               </p>
               <div className='flex flex-col gap-'>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Portfolio
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   About
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Services
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold whitespace-nowrap'>
                   Pricing Plans
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Contact
                 </p>
               </div>
             </div>
-            <div className='flex flex-col gap-2'>
-              <p className='font-medium text-base text-[#061C3D] h-9 uppercase w-[200px]'>
+            <div className='flex flex-col gap-2 flex-1'>
+              <p className='font-medium text-base text-[#061C3D] h-9 uppercase'>
                 Services
               </p>
               <div className='flex flex-col gap-'>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   UI/UX Design
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Branding
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Illustration
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Design Concept{" "}
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   App Design
                 </p>
               </div>
             </div>
-            <div className='flex flex-col gap-2'>
-              <p className='font-medium text-base text-[#061C3D] h-9 uppercase w-[200px]'>
+            <div className='flex flex-col gap-2 flex-1'>
+              <p className='font-medium text-base text-[#061C3D] h-9 uppercase'>
                 Product
               </p>
               <div className='flex flex-col gap-'>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Figma
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Adobe
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Dribbble
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Behance{" "}
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold'>
+                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Themeforest
                 </p>
               </div>
