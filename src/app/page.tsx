@@ -376,38 +376,38 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='flex gap-20 py-32 px-[10vw] bg-[#F5F6F7]'>
-        <p className='text-[42px] font-bold text-text-gray900 whitespace-nowrap'>
+      <div className='flex gap-20 py-32 px-[5vw] md:px-[10vw] bg-[#F5F6F7] flex-wrap'>
+        <p className='text-[42px] font-bold text-text-gray900 md:whitespace-nowrap'>
           EGNiS is Trusted By
         </p>
-        <div className='flex gap-6 flex-wrap'>
-          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+        <div className='flex gap-6 flex-wrap justify-center'>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[45%] md-w-[182px] h-[107px]'>
             <Image src={youtube} alt='Logo' className='' />
           </div>
-          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[45%] md-w-[182px] h-[107px]'>
             <Image src={slack} alt='Logo' className='' />
           </div>
-          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[45%] md-w-[182px] h-[107px]'>
             <Image src={amazon} alt='Logo' className='' />
           </div>
-          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[45%] md-w-[182px] h-[107px]'>
             <Image src={microsoft} alt='Logo' className='' />
           </div>
-          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[45%] md-w-[182px] h-[107px]'>
             <Image src={lenovo} alt='Logo' className='' />
           </div>
-          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[45%] md-w-[182px] h-[107px]'>
             <Image src={netflix} alt='Logo' className='' />
           </div>
-          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[45%] md-w-[182px] h-[107px]'>
             <Image src={google} alt='Logo' className='' />
           </div>
-          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[182px] h-[107px]'>
+          <div className='flex justify-center items-center bg-white rounded-lg cursor-pointer w-[45%] md-w-[182px] h-[107px]'>
             <Image src={dribble} alt='Logo' className='' />
           </div>
         </div>
       </div>
-      <div className='flex gap-20 justify-between px-[10vw] pb-20 pt-[193px] relative'>
+      <div className='flex gap-20 justify-between px-[5vw] md:px-[10vw] pb-20 pt-[193px] relative flex-wrap'>
         <Image
           src={nigeriaFlag}
           alt='Logo'
