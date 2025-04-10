@@ -70,33 +70,33 @@ export default function Home() {
             return (
               <p
                 key={title}
-                className='text-base font-medium hover:font-semibold  hover:text-main duration-500 cursor-pointer text-text'
+                className='text-sm md:text-base font-medium hover:font-semibold  hover:text-main duration-500 cursor-pointer text-text'
               >
                 {title}
               </p>
             );
           })}
-          <button className='bg-main text-base px-6 py-3 rounded-sm text-accent-white cursor-pointer'>
+          <button className='bg-main text-sm md:text-base px-6 py-3 rounded-sm text-accent-white cursor-pointer'>
             Register/Sign In
           </button>
         </div>
       </div>
 
       <div
-        className='flex  gap-20 px-[5vw] md:px-[10vw] pb-8 pt-32 justify-center items-center flex-wrap'
+        className='flex  gap-20 px-[5vw] md:px-[10vw] pb-8 pt-32 justify-center items-center flex-wrap md:h-[90vh]'
         style={{
           backgroundImage: "url('/images/Background.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "100vh",
+          // height: "100vh",
           width: "100%",
         }}
       >
         <div className='flex flex-col gap-8 w-full md:w-1/2'>
-          <p className='font-bold text-5xl text-text-gray900 leading-16'>
+          <p className='font-bold text-3xl md:text-5xl text-text-gray900 md:leading-16'>
             Empowering Digital Transformation Across Nigeria{" "}
           </p>
-          <p className='text-text-gray700 text-base'>
+          <p className='text-text-gray700 text-sm md:text-base'>
             EGNiS provides robust, secured and scalable digital infrastructure
             for Nigerian governments to deliver seamless services to citizens
             and businesses.
@@ -113,16 +113,16 @@ export default function Home() {
         <div className='flex-1' />{" "}
       </div>
       <div className='flex flex-col gap-24 bg-linear-to-tr from-white to-accent-light px-[5vw] md:px-[10vw] pt-8 pb-32 justify-center items-center'>
-        <p className='italic text-main text-lg font-medium w-fit'>
+        <p className='italic text-main text-base md:text-lg font-medium w-fit'>
           ABOUT EGNIS
         </p>
         <div className='flex gap-20 flex-wrap'>
           <Image src={transforming} alt='Logo' className='' />
           <div className='flex flex-col gap-8 w-full md:w-1/2'>
-            <p className='font-bold text-5xl text-text-gray900 leading-16'>
+            <p className='font-bold text-3xl md:text-5xl text-text-gray900 md:leading-16'>
               Transforming Governance Through Digital Infrastructure
             </p>
-            <p className='text-text-gray700 text-base'>
+            <p className='text-text-gray700 text-sm md:text-base'>
               The E-Government Nigeria System (EGNiS) is a robust and scalable
               digital platform designed to automate and digitize government
               processes and services across Nigeria at the federal, state, and
@@ -138,12 +138,12 @@ export default function Home() {
         </div>
       </div>
       <div className='flex flex-col gap-16  bg-accent-light px-[5vw] md:px-[10vw] pt-8 pb-32  justify-center items-center'>
-        <p className='italic text-main text-lg font-medium w-fit'>
+        <p className='italic text-main text-base md:text-lg font-medium w-fit'>
           EGNis Features{" "}
         </p>
         <div className='flex flex-col gap-3 text-text-gray900 items-center'>
-          <p className='text-5xl font-semibold '>EGNiS Core</p>
-          <p className='text-lg w-full md:max-w-2/3 leading-7 text-center'>
+          <p className='text-3xl md:text-5xl font-semibold '>EGNiS Core</p>
+          <p className='text-base md:text-lg w-full md:max-w-2/3 leading-7 text-center'>
             The foundational infrastructure of EGNiS, providing the standard
             framework and solutions required for effective digital
             transformation across all government levels.
@@ -161,7 +161,7 @@ export default function Home() {
                     {feat.iconFilled}
                     {feat.iconUnfilled}
                   </div>
-                  <p className='text-text-gray900 text-base font-medium'>
+                  <p className='text-text-gray900 text-sm md:text-base font-medium'>
                     {feat.title}
                   </p>
                 </div>
@@ -181,10 +181,10 @@ export default function Home() {
       </div>
       <div className='flex flex-col gap-16  bg-accent-light px-[5vw] md:px-[10vw] py-8  justify-center items-center'>
         <div className='flex flex-col gap-3 text-text-gray900 items-center'>
-          <p className='text-5xl font-semibold '>
+          <p className='text-3xl md:text-5xl font-semibold '>
             Integrated Products and Solutions
           </p>
-          <p className='text-lg w-full md:max-w-2/3 leading-7 text-center'>
+          <p className='text-base md:text-lg w-full md:max-w-2/3 leading-7 text-center'>
             Additional services designed to address specialized government
             operations and ensure comprehensive digital transformation.
           </p>
@@ -201,7 +201,7 @@ export default function Home() {
                     {sol.iconFilled}
                     {sol.iconUnfilled}
                   </div>
-                  <p className='text-text-gray900 text-base font-medium text-center'>
+                  <p className='text-text-gray900 text-sm md:text-base font-medium text-center'>
                     {sol.title}
                   </p>
                 </div>
@@ -220,16 +220,16 @@ export default function Home() {
       </div>
       <div className='flex gap-x-20 gap-y-6 bg-linear-to-r from-white to-accent-light px-[5vw] md:px-[10vw] pt-8 pb-32 justify-center items-center flex-wrap'>
         <div className='flex flex-col gap-8 w-full md:w-1/2'>
-          <p className='font-bold text-5xl text-text-gray900 leading-16'>
+          <p className='font-bold text-3xl md:text-5xl text-text-gray900 leading-16'>
             Why EGNiS?
           </p>
-          <p className='text-text-gray700 text-lg font-medium'>
+          <p className='text-text-gray700 text-base md:text-lg font-medium'>
             EGNiS is the most comprehensive and scalable digital governance
             platform for Nigeria, designed to enhance efficiency, transparency,
             and accessibility across all government levels.
           </p>
           <div className='flex flex-col gap-3'>
-            <p className='text-text-gray700 font-semibold text-lg'>
+            <p className='text-text-gray700 font-semibold text-base md:text-lg'>
               What Makes EGNiS Stand Out:
             </p>
             <div className='flex flex-col gap-2'>
@@ -238,7 +238,7 @@ export default function Home() {
                   <div key={why} className='gap-4 flex items-center'>
                     <Image src={checkmark} alt='Logo' className='' />
 
-                    <p className='text-[#39404B] text-base'>{why}</p>
+                    <p className='text-[#39404B] text-sm md:text-base'>{why}</p>
                   </div>
                 );
               })}
@@ -248,14 +248,14 @@ export default function Home() {
         <Image src={whyEgnis} alt='Logo' className='' />
       </div>
       <div className='flex flex-col gap-16  bg-white px-[5vw] md:px-[10vw] pt-8 pb-20  justify-center items-center'>
-        <p className='italic text-main text-lg font-medium w-fit'>
+        <p className='italic text-main text-base md:text-lg font-medium w-fit'>
           Architecture and Key Characteristics
         </p>
         <div className='flex flex-col gap-3 text-text-gray900 items-center'>
-          <p className='text-5xl font-semibold text-text-gray900'>
+          <p className='text-3xl md:text-5xl font-semibold text-text-gray900'>
             Built for Performance, Security, and Scalability
           </p>
-          <p className='text-lg w-full md:max-w-2/3 leading-7 text-center text-text-gray700'>
+          <p className='text-base md:text-lg w-full md:max-w-2/3 leading-7 text-center text-text-gray700'>
             EGNiS is designed with a secure, scalable, and user-centric
             architecture to ensure seamless interoperability and efficient
             service delivery across all levels of government.
@@ -272,8 +272,10 @@ export default function Home() {
                   <Image src={architecture.icon} alt='Logo' className='' />
                 </div>
                 <div className='flex flex-col gap-'>
-                  <p className='font-medium text-lg'>{architecture.title}</p>
-                  <p className='text-base'>{architecture.text}</p>
+                  <p className='font-medium text-base md:text-lg'>
+                    {architecture.title}
+                  </p>
+                  <p className='text-sm md:text-base'>{architecture.text}</p>
                 </div>
               </div>
             );
@@ -286,21 +288,21 @@ export default function Home() {
         </button>
       </div>
       <div className='flex flex-col gap-16  bg-[#F9FFF2] px-[5vw] md:px-[10vw] pt-8 pb-32  justify-center items-center'>
-        <p className='italic text-main text-lg font-medium w-fit'>
+        <p className='italic text-main text-base md:text-lg font-medium w-fit'>
           Product in Focus
         </p>
         <div className='flex gap-20 justify-center items-center flex-wrap'>
           <div className='flex flex-col gap-8 w-full md:w-1/2'>
-            <p className='font-bold text-5xl text-text-gray900 leading-16'>
+            <p className='font-bold text-3xl md:text-5xl text-text-gray900 md:leading-16'>
               eHealth Nigeria <br /> System
             </p>
 
             <div className='flex flex-col gap-3'>
-              <p className='text-[#39404B] text-lg font-medium'>
+              <p className='text-[#39404B] text-base md:text-lg font-medium'>
                 Improving the quality and accessibility of healthcare for
                 everyone, everywhere in Nigeria
               </p>
-              <p className='text-[#39404B] text-base mt-3'>
+              <p className='text-[#39404B] text-sm md:text-base mt-3'>
                 EHNS equips healthcare providers, government bodies, and
                 citizens with digital tools and solutions for quality and
                 accessible healthcare for all Nigerians
@@ -317,7 +319,9 @@ export default function Home() {
 
       <div className='flex gap-20 py-32 px-[5vw] md:px-[10vw] bg-main flex-wrap'>
         <div className='flex flex-col gap-6 w-full md:w-1/2 text-white'>
-          <p className='text-white text-[40px] font-bold'>Request For a Demo</p>
+          <p className='text-white text-3xl md:text-[40px] font-bold'>
+            Request For a Demo
+          </p>
           <p>
             Aenean vestibulum felis nec egestas fringilla. Duis non felis
             consequat, varius sapien convallis, tincidunt nisl.{" "}
@@ -325,8 +329,10 @@ export default function Home() {
           <div className='flex gap-3 text-white'>
             <Image src={emailIcon} alt='Logo' className='' />
             <div className='flex flex-col gap- '>
-              <p className='uppercase text-base font-medium'>Email us</p>
-              <p className='text-2xl font-medium'>info@golio.com</p>
+              <p className='uppercase text-sm md:text-base font-medium'>
+                Email us
+              </p>
+              <p className='text-lg md:text-2xl font-medium'>info@golio.com</p>
             </div>
           </div>
         </div>
@@ -334,7 +340,7 @@ export default function Home() {
           <p className='text-text-gray900 font-bold text-2xl'>
             Request A Demo — let’s work together.
           </p>
-          <p className='text-base text-text-gray700'>
+          <p className='text-sm md:text-base text-text-gray700'>
             Got a project? Drop us a line if you want to work together on
             something exciting. Or do you need our help? Feel free to contact
             us.
@@ -417,74 +423,74 @@ export default function Home() {
         <div className='flex flex-col gap-5'>
           <div className='flex z-10 flex-wrap  gap-10 md:gap-20'>
             <div className='flex flex-col gap-2 flex-1'>
-              <p className='font-medium text-base text-[#061C3D] h-9 uppercase'>
+              <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 uppercase'>
                 Quick Links
               </p>
               <div className='flex flex-col gap-'>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Portfolio
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   About
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Services
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold whitespace-nowrap'>
                   Pricing Plans
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Contact
                 </p>
               </div>
             </div>
             <div className='flex flex-col gap-2 flex-1'>
-              <p className='font-medium text-base text-[#061C3D] h-9 uppercase'>
+              <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 uppercase'>
                 Services
               </p>
               <div className='flex flex-col gap-'>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   UI/UX Design
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Branding
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Illustration
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Design Concept{" "}
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 cursor-pointer hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   App Design
                 </p>
               </div>
             </div>
             <div className='flex flex-col gap-2 flex-1'>
-              <p className='font-medium text-base text-[#061C3D] h-9 uppercase'>
+              <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 uppercase'>
                 Product
               </p>
               <div className='flex flex-col gap-'>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Figma
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Adobe
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Dribbble
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Behance{" "}
                 </p>
-                <p className='font-medium text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
+                <p className='font-medium text-sm md:text-base text-[#061C3D] h-9 hover:text-main duration-500 hover:font-bold  whitespace-nowrap'>
                   Themeforest
                 </p>
               </div>
             </div>
           </div>
           <div className='flex flex-col gap-2.5'>
-            <p className='text-base font-medium'>Connect with us:</p>
+            <p className='text-sm md:text-base font-medium'>Connect with us:</p>
             <div className='flex items-center gap-3'>
               <Link
                 href={"/"}
